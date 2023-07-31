@@ -27,7 +27,7 @@ for row in new_matix:
 
 def revers_dict(**data):
    
-    for key, value in data.items():
-        print("{} = {}".format(value, key))
+        this_dict = dict(zip(data.values(), data.keys()))
+        print(this_dict)
 
 revers_dict(rev=True, acc="YES", stroka=4)
